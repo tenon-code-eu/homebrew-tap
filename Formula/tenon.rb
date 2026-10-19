@@ -2,28 +2,28 @@
 class Tenon < Formula
   desc "Sovereign, self-hostable terminal coding agent"
   homepage "https://github.com/tenon-code-eu/tenon"
-  version "0.3.0"
+  version "0.4.0"
   license "EUPL-1.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.3.0/tenon_v0.3.0_darwin_arm64.tar.gz"
-      sha256 "03258084c223977219a3979b09cf127f1887c9089ccc6c1cb27ac06b8c6d5d92"
+      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.4.0/tenon_v0.4.0_darwin_arm64.tar.gz"
+      sha256 "64e7abb5786183d6d811eb27a858888b061757deea6a245e2611d2f4c08cdec8"
     end
     on_intel do
-      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.3.0/tenon_v0.3.0_darwin_amd64.tar.gz"
-      sha256 "a491b2b0ccf4603dc7e6ab868073c77abd8323d6ecb7e989c4c0df8bbf15e373"
+      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.4.0/tenon_v0.4.0_darwin_amd64.tar.gz"
+      sha256 "9623f9b04859a84e2741967b25cb25b0a57754dd15aeadb87255d2b01ca0e9ed"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.3.0/tenon_v0.3.0_linux_arm64.tar.gz"
-      sha256 "a23e90ed7931e8bb9f1d553e2703d9a82efd162444942499825c7c49f726f214"
+      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.4.0/tenon_v0.4.0_linux_arm64.tar.gz"
+      sha256 "50a3abd3bdba9c787ae9b903356aa6cf71a75c5a2aa3db43cf60067435d8a8f5"
     end
     on_intel do
-      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.3.0/tenon_v0.3.0_linux_amd64.tar.gz"
-      sha256 "31db53f04b942a4b540e216b22845402e3d12c481181c74edf4a780ed3a84f54"
+      url "https://github.com/tenon-code-eu/tenon/releases/download/v0.4.0/tenon_v0.4.0_linux_amd64.tar.gz"
+      sha256 "1e763a10ea5d05c24fa0cea18c83c69930a276314c2a0c1e927d97824acbdb0f"
     end
   end
 
@@ -34,6 +34,6 @@ class Tenon < Formula
   end
 
   test do
-    assert_match "tenon v0.3.0", shell_output("#{bin}/tenon --version")
+    assert_match "tenon v0.4.0", shell_output("#{bin}/tenon --version")
   end
 end
